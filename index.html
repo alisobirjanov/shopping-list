@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping list</title>
+  </head>
+    <div class="container">
+      <div class="card">
+
+        <h1>Shopping list</h1>
+
+        <div class="form-control">
+          <form action="" id="form">
+            <input type="text" placeholder="Enter title" id="title" required>
+            <input type="number" placeholder="Enter price" id="price" required>
+            <button class="btn">Добавить</button>
+          </form>
+        </div>
+
+        <hr />
+
+        <ul class="list" id="ideas"></ul>
+
+        <hr>
+
+        <p>Общее сумма: <strong id="count"></strong></p>
+      </div>
+    </div>
+      
+    <script src="https://unpkg.com/@feathersjs/client@^4.3.0/dist/feathers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
